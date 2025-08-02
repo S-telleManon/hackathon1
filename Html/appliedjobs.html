@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="register.html">
     <link rel="stylesheet" href="savedjobs.html">
     <link rel="stylesheet" href="jobs.html">
     <link rel="stylesheet" href="appliedjobs.html">    
@@ -33,8 +32,26 @@
     opacity: 0.2; 
     z-index: -1; 
     }
-
-    </style>
+    .saved-job {
+      padding: 10px;
+      background: #eee;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+    .clear-btn {
+      padding: 6px 12px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .clear-btn:hover {
+      background: #555;
+    }
+  </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-lightc py-2">
@@ -78,28 +95,11 @@
     </div>
   </div>
 </nav>
-<Section id="Login">
-    <div class="bckform1">
-        <form class="d-flex">
-          <input class="form-control me-2" type="Text" placeholder="Job or Company" aria-label="Search">
-          <input class="form-control me-2" type="Text" placeholder="Locations" aria-label="Search">
-          <input class="form-control me-2" type="Text" placeholder="Category" aria-label="Search">
-          <button class="btn btn-success p-2 text-nowrap" type="submit">Search</button>
-        </form>
-    </div>
-    <div class="login-container">
-    <h2>Login to your Account</h2>
-    <form>
-      <input type="text" placeholder="Username" required /><br>
-      <input type="password" placeholder="Password" required /><br>
-      <button type="submit">Login <i class="bi bi-box-arrow-in-right"></i></button>
-    </form>
-    <p>Forgot your password?</p>
+<div class="savedjob">
+  <h2>APPLIED JOBS</h2>
+  <h3>Sorry! No jobs applied till now</h3>
+  <div id="savedJobsList"></div>
+  <a href="jobs.html">⬅ Back to Jobs</a>
   </div>
-  <div class="headerlog">
-    <span id="headerlogin">Not a member yet?</span><br>
-    <span id="headersublogin">Become part of Mauritius’ leading recruitment platform and connect with thousands of employers and endless job opportunities.<br><br>Gain access to valuable resources, expert tips to land your dream job, and create your own personalized profile to showcase your skills.</span>
-    <a href="register.html"><button type="submit">Register <i class="bi bi-person-plus"></i></button></a>
-  </div>
-</Section>
 </body>
+</html>

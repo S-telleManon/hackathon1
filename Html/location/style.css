@@ -319,7 +319,11 @@ h1,#textsub{
     opacity: 0.9;
     box-shadow: 0 0 10px rgba(0,0,0,0.3)
   }
-
+#jobcontainer {
+    display: grid;
+    grid-template-rows: 2;
+    row-gap: 20px;
+    } 
 .jobdetails{
     display: flex;
     flex-direction: row;
@@ -369,22 +373,17 @@ h1,#textsub{
     position: absolute;
     top: 150px;
     left: 550px;
-    display: grid;
-    grid-template-rows: 2;
-    row-gap: 20px;
 }
-
 #filtercontainer{
     background: #ffffff;
     border: 1px solid #333333;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     width: 300px;
     padding-bottom: 30px;
     text-align: center;
     position: absolute;
-    top: 180px;
+    top: 200px;
     left: 200px;
 }
 #listing1{
@@ -409,26 +408,4 @@ h1,#textsub{
     position: absolute;
     top: 700px;
     left: 200px;
-    overflow: hidden;
-}
-.headermain1{
-     color: rgb(25, 135, 84);
-     font-size: 40px;
-}
-.buttonsubmit{
-    display: flex;
-    vertical-align: middle;
-    justify-content: flex-end;
-    gap: 10px;
-    position: absolute;
-    top: 75px;
-    left: 500px;
-}
-#jobcontainer1{
-    position: absolute;
-    top: 200px;
-    left: 550px;
-    display: grid;
-    grid-template-rows: 2;
-    row-gap: 20px;
 }
