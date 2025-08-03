@@ -75,7 +75,7 @@
     grid-template-columns: 80% 20%;
     position: absolute;
     top: 800px;
-    left: 400px;
+    left: 375px;
     width: 800px;
     justify-content: space-between;
     border-radius: 10px;
@@ -271,7 +271,7 @@ h1,#textsub{
     text-align: center;
     position: absolute;
     top: 1200px;
-    left: 400px;
+    left: 375px;
   }
   .contact-container h2 {
     color: #2e7d32;
@@ -309,6 +309,7 @@ h1,#textsub{
     margin-top: 15px;
     font-size: 15px;
   }
+
   #image1{
     position: absolute;
     top: 200px;
@@ -432,6 +433,31 @@ h1,#textsub{
     grid-template-rows: 2;
     row-gap: 20px;
 }
+footer {
+  background-color: black;    /* adjust color */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  top: 1800px;
+  width: 100%;
+}
+#subtitle{
+    color:  rgb(25, 135, 84);
+    font-size: large;
+}
+#subtitle2{
+    color:  rgb(25, 135, 84);
+    font-size: 25px;
+}
+#headerfoot{
+    color: white;
+    font-size: 35px;
+}
+#focus{
+    color:  white;
+    font-size: 25px;
+}
 
 /* mediaqueries to make the page responsive */
 
@@ -539,6 +565,15 @@ margin: 20px;
     grid-template-rows: 2;
     row-gap: 20px;
     margin: 0px 5px 0px 5px;
+}
+footer {
+  background-color: black;    /* adjust color */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+    width: 100%;
+    position: relative;
+    top: 50px;
 }
 }
 
