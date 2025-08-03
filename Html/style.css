@@ -367,7 +367,7 @@ h1,#textsub{
 }
 #jobcontainer{
     position: absolute;
-    top: 150px;
+    top: 200px;
     left: 550px;
     display: grid;
     grid-template-rows: 2;
@@ -432,3 +432,114 @@ h1,#textsub{
     grid-template-rows: 2;
     row-gap: 20px;
 }
+
+/* mediaqueries to make the page responsive */
+
+@media (max-width: 768px) {
+  .login-container,
+  .headerlog,
+  .bckform1,.navbar-nav,.register-container,.bckform {
+    position: relative !important;  /* stop absolute positioning */
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 90% !important;
+    margin: 20px auto !important;
+  }
+
+  .login-container, .headerlog {
+    text-align: center;
+  }
+
+  /* Optional: make search form stack nicely */
+  .bckform1 form {
+    flex-direction: column;
+    gap: 10px;
+  }
+    .bckform form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bckform1 input, .bckform1 button {
+    width: 100% !important;
+  }
+    .bckform input, .bckform1 button {
+    width: 100% !important;
+  }
+  #filtercontainer,#locationcontainer,.secondpartcontainer,.contact-container,.savedjob{
+    position: relative;  /* stop absolute positioning */
+    top: 50px !important;
+    left: auto !important;
+    right: auto !important;
+    width: 90% !important;
+    margin: 20px auto !important;
+  }
+  #jobcontainer{
+    position: relative;  /* stop absolute positioning */
+    top: 100px !important;
+    left: auto !important;
+    right: auto !important;
+    width: 90% !important;
+    margin: 20px auto !important;
+  }
+  .wholejob{
+    width: auto;
+  }
+  .buttonsubmit{
+    display: flex;
+    vertical-align: middle;
+    justify-content: flex-end;
+    gap: 10px;
+    position: relative;
+    top: auto;
+    left: auto;
+    }
+    .navbar-nav{
+    flex-direction: column;
+    column-gap: 6px;
+    text-align: center;
+
+  }
+  #image1{
+    display: none;
+  }
+#myVideo{
+    display: none;
+}
+.textcontainer{
+position: relative;
+top: auto;
+left: auto;
+text-align: center;
+width: auto;
+margin: 20px;
+}
+.gridcontainer{
+    position: relative;  /* stop absolute positioning */
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    top: 50px !important;
+    left: auto !important;
+    right: auto !important;
+    width: 90% !important;
+    margin: 20px auto !important;
+  }
+.secondpartcontainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 70% 30%;
+}
+#jobcontainer1{
+    position: relative;
+    top: 50px;
+    left: auto;
+    display: grid;
+    grid-template-rows: 2;
+    row-gap: 20px;
+    margin: 0px 5px 0px 5px;
+}
+}
+
+
